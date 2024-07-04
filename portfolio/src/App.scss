@@ -21,41 +21,67 @@
   justify-content: space-between;
   align-items: center;
   flex:1;
+  margin-top: 1em;
   width: 100vw;
   height:4rem;
   font-size: 1em;
+
+  div {
+    padding: 0.5em;
+  }
+  .navbarLogos {
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+    gap: 1em;
+
+    .logo img {
+      height: 3em;
+    }
+  }
+  .navbar_name {
+    margin-left: 10%;
+  }
 }
 
-.navbar div{
-  padding: 0.5em
-}
 
-.navbarLogos .logo img{
- height: 3em;
-}
-.navbar_name {
+
+/* ---------------- About Me ----------------------*/
+
+.aboutme {
   margin-left: 10%;
-}
-.navbarLogos {
-  display: flex;
-  margin-right: 10%;
-  align-items: center;
-}
+  text-align: start;
+  margin-top:7em;
+  
+  h1 {
+    font-size: 3em;
 
+    span {
+      color: var(--teal);
+    }
+  }
+}
 
 /* ----------------- Mobile Device CSS ----------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .navbar {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 0.8em;
+    text-align: center;
+    .navbarLogos, .navbar_name {
+      height: 3em;
+      margin: 0;
+    }
+    .navbar_name h1 {
+      margin: 0;
+    }
   }
-  .navbar div {
-    height: 3em;
-    margin: 0;
-  }
-  .navbar_name h1 {
-    margin: 0
+  
+  .aboutme {
+
+    text-align: center;
   }
   
 }
