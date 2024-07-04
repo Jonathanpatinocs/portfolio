@@ -1,0 +1,62 @@
+:root {
+  --dark: #222831;
+  --gray: #31363F;
+  --teal: #76ABAE;
+  --light: #EEEEEE;
+}
+
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+
+.logo img:hover {
+  filter: drop-shadow(0 0 2em var(--teal));
+}
+
+/* ---------------- Navbar ----------------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex:1;
+  width: 100vw;
+  height:4rem;
+  font-size: 1em;
+}
+
+.navbar div{
+  padding: 0.5em
+}
+
+.navbarLogos .logo img{
+ height: 3em;
+}
+.navbar_name {
+  margin-left: 10%;
+}
+.navbarLogos {
+  display: flex;
+  margin-right: 10%;
+  align-items: center;
+}
+
+
+/* ----------------- Mobile Device CSS ----------- */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar div {
+    height: 3em;
+    margin: 0;
+  }
+  .navbar_name h1 {
+    margin: 0
+  }
+  
+}
+
