@@ -3,6 +3,9 @@ import javascriptLogo from '/src/assets/javascriptlogo.png'
 import htmlLogo from '/src/assets/htmllogo.svg'
 import cssLogo from '/src/assets/csslogo.png'
 import typescriptLogo from '/src/assets/typescriptlogo.png'
+import nodejsLogo from '/src/assets/nodejslogo.png'
+import mongodbLogo from '/src/assets/mongodblogo.svg'
+import expressjsLogo from '/src/assets/expressjslogo.webp'
 const TechCard = ({tech, logo}) => {
     return (
         <div className="techCard">
@@ -24,7 +27,7 @@ const TechSection = ({techCards, name}) => {
 }
 
 const Technologies = () => {
-    const languages = [
+    const frontend = [
         {
             technology: 'Javascript',
             logo: javascriptLogo,
@@ -41,13 +44,29 @@ const Technologies = () => {
             technology: 'Typescript',
             logo: typescriptLogo
         }
-
-  
+    ]
+    const backend = [
+        {
+            technology: 'Node.js',
+            logo: nodejsLogo
+        },
+        {
+            technology: 'Mongo.db',
+            logo: mongodbLogo
+        },
+        {
+            technology: 'Express.js',
+            logo: expressjsLogo
+        }
     ]
     return (
         <div className='technologies'>
             <h1>Technologies</h1>
-            <TechSection techCards={languages} name='Languages'/>
+            <div className='technologiesSection'>
+                <TechSection techCards={frontend} name='Front End'/>
+                <TechSection techCards={backend} name='Back End' />
+            </div>
+            
         </div>
     )
 }

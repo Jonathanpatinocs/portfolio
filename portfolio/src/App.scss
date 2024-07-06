@@ -88,8 +88,18 @@
     border-radius: 15px;
     
   }
+  .technologiesSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    gap: 20px;
+  }
   .techSection {
-    width: clamp(600px, 60%, 1000px);
+    flex:1;
+    min-width: 500px;
 
     h2 {
       text-align: start;
