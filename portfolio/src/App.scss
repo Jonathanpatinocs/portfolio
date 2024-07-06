@@ -52,6 +52,8 @@
   margin-left: 10%;
   text-align: start;
   margin-top:7em;
+  max-width: 650px;
+  margin-right:5%;
   
   h1 {
     font-size: 3em;
@@ -59,6 +61,16 @@
     span {
       color: var(--teal);
     }
+  }
+  .aboutme_description {
+    
+
+    span {
+      color: #F4CE14;
+    }
+  }
+  img {
+    margin-top:50px;
   }
 }
 
