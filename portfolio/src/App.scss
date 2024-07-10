@@ -79,13 +79,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   
   h1 {
     width: 40%;
     color:var(--dark);
     background-color: var(--teal);
     border-radius: 15px;
+    min-width: 250px;
     
   }
   .technologiesSection {
@@ -104,6 +105,7 @@
     h2 {
       text-align: start;
       margin-bottom: 5px;
+      
       color: var(--light)
     }
     .techCards {
@@ -136,6 +138,9 @@
 
 /* ----------------- Mobile Device CSS ----------- */
 @media only screen and (max-width: 500px) {
+
+  /* ----------------- Mobile Device Navbar ----------- */
+
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -150,11 +155,42 @@
       margin: 0;
     }
   }
-  
+  /* ----------------- Mobile Device About Me ----------- */
   .aboutme {
     margin: 2%;
     text-align: center;
   }
-  
-}
+  /* ----------------- Mobile Device Technologies ----------- */
+  .technologies {
+    width: 100%;
+    h1 {
+      min-width: 250px;
+    }
+    .technologiesSection {
+     
+      .techSection {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items:center;
+        .techCards {
+          width: clamp(250px, 80%, 450px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 5px;
+
+          .techCard {
+          width: clamp(250px, 80%, 450px);
+          padding: 10px;
+
+          }
+        
+          }  
+        }
+      } 
+    }
+  }
 
