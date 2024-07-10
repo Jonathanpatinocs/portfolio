@@ -79,7 +79,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   
   h1 {
     width: 40%;
@@ -132,6 +132,57 @@
     }
   }
 
+}
+/* ---------------- Projects ----------------------*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-top: 60px;
+  h1 {
+    width: 40%;
+    color:var(--dark);
+    background-color: var(--teal);
+    border-radius: 15px;
+    min-width: 250px;
+  }
+  .project {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .project-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+      
+    }
+
+    .project-container {
+      display: flex;
+      
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    
+      .slide {
+        width: 600px;
+      }
+
+      .project-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        background-size: cover;
+      }
+      .project-desc {
+        max-width: 400px;
+      }
+    }
+
+  }
 }
 
 
