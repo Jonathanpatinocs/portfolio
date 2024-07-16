@@ -11,7 +11,7 @@ const Project = ({images, title, description}) => {
         <div className='project'>
             <div className='project-title'>{title}</div>
             <div className='project-container'> 
-            <div className='slide'>
+             <div className='slide'>
                 <Slide autoplay={false}>
 
                     {images.map((image, index) => (
@@ -20,7 +20,7 @@ const Project = ({images, title, description}) => {
                         </div>
                     ))}
                 </Slide>
-            </div>
+             </div>
             <div className='project-desc'>{description}</div>
             </div>
         </div> 
