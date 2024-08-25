@@ -1,10 +1,19 @@
 /* eslint-disable react/prop-types */
 
 import 'react-slideshow-image/dist/styles.css'
+
+/* Spotify Project Images */
 import spotAuthView from '/src/assets/spotifyimgs/spot1.png'
 import spotMobilView from '/src/assets/spotifyimgs/spot2.png'
 import spotTopTracksView from '/src/assets/spotifyimgs/spot3.png'
 import spotTopArtistsView from '/src/assets/spotifyimgs/spot4.png'
+
+/* System Design Project Images */
+import ganttChart from '/src/assets/sysdesignimgs/sysdesimg1.png'
+import profileWindow from '/src/assets/sysdesignimgs/sysdesimg2.png'
+import floorPlan from '/src/assets/sysdesignimgs/sysdesimg3.png'
+import classDiagram from '/src/assets/sysdesignimgs/sysdesimg4.png'
+
 import { Slide } from 'react-slideshow-image'
 const Project = ({images, title, description}) => {
     
@@ -36,6 +45,12 @@ const Projects = () => {
         spotTopArtistsView,
         spotMobilView
     ]
+    const project3Images = [
+        floorPlan,
+        profileWindow,
+        ganttChart,
+        classDiagram
+    ]
 
     return (
         <div className='projects'>
@@ -53,7 +68,7 @@ const Projects = () => {
             <Project 
                 title = 'Project 1'
                 description = " This is a project created by react, js, html, css, and depsloutsf using sedjfklsjfs nootsfsdf sql dtabase"
-                images = {project1Images}
+                images = {project3Images}
             />
         </div>
         
