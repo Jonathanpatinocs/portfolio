@@ -6,6 +6,9 @@ import typescriptLogo from '/src/assets/typescriptlogo.png'
 import nodejsLogo from '/src/assets/nodejslogo.png'
 import mongodbLogo from '/src/assets/mongodblogo.svg'
 import expressjsLogo from '/src/assets/expressjslogo.webp'
+import reactLogo from '/src/assets/react.svg'
+import pythonLogo from '/src/assets/python-logo.png'
+import flaskLogo from '/src/assets/Flask.png'
 const TechCard = ({tech, logo}) => {
     return (
         <div className="techCard">
@@ -43,9 +46,17 @@ const Technologies = () => {
         {
             technology: 'Typescript',
             logo: typescriptLogo
-        }
+        },
+        {
+            technology: 'React',
+            logo: reactLogo
+        },
     ]
     const backend = [
+        {
+            technology: 'Python',
+            logo: pythonLogo
+        },
         {
             technology: 'Node.js',
             logo: nodejsLogo
@@ -55,9 +66,13 @@ const Technologies = () => {
             logo: mongodbLogo
         },
         {
+            technology: 'Flask',
+            logo: flaskLogo
+        },
+        {
             technology: 'Express.js',
             logo: expressjsLogo
-        }
+        },
     ]
     return (
         <div className='technologies'>
