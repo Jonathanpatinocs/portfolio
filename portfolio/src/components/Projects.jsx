@@ -39,8 +39,8 @@ const Projects = () => {
         <div className='projects'>
             <h1>Projects</h1>
             <Project 
-                title = 'Project 1'
-                description = " This is a project created by react, js, html, css, and depsloutsf using sedjfklsjfs nootsfsdf sql dtabase"
+                title = 'Spotify Statisic Tracker'
+                description = " Spotify Statistics Tracker created using React, TypeScript, and Sass with the Spotify API developer tools"
                 images = {project1Images}
             />
             <Project 
