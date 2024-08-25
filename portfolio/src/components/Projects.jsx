@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 
 import 'react-slideshow-image/dist/styles.css'
-import projectimg1 from '/src/assets/projectimg1.jpg'
-import projectimg2 from '/src/assets/projectimg2.png'
-import projectimg3 from '/src/assets/projectimg3.png'
+import spotAuthView from '/src/assets/spotifyimgs/spot1.png'
+import spotMobilView from '/src/assets/spotifyimgs/spot2.png'
+import spotTopTracksView from '/src/assets/spotifyimgs/spot3.png'
+import spotTopArtistsView from '/src/assets/spotifyimgs/spot4.png'
 import { Slide } from 'react-slideshow-image'
 const Project = ({images, title, description}) => {
     
@@ -30,9 +31,10 @@ const Project = ({images, title, description}) => {
 
 const Projects = () => {
     const project1Images = [
-        projectimg1,
-        projectimg2,
-        projectimg3
+        spotAuthView,
+        spotTopTracksView,
+        spotTopArtistsView,
+        spotMobilView
     ]
 
     return (

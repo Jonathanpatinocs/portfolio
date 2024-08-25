@@ -176,7 +176,9 @@
         align-items: center;
         justify-content: center;
         height: 400px;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
       .project-desc {
         max-width: 400px;
@@ -295,6 +297,7 @@
     }
     .projects {
       width: 100%;
+      
       .slide {
         max-width: 300px;
         height: 200px;
