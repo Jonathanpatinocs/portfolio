@@ -14,6 +14,10 @@ import profileWindow from '/src/assets/sysdesignimgs/sysdesimg2.png'
 import floorPlan from '/src/assets/sysdesignimgs/sysdesimg3.png'
 import classDiagram from '/src/assets/sysdesignimgs/sysdesimg4.png'
 
+/* Tumblr API Project Images    */
+import tumblrFull from '/src/assets/tmbrimg/tmbrfull.png'
+import tumblrMobile from '/src/assets/tmbrimg/tmbrmobile.png'
+
 import { Slide } from 'react-slideshow-image'
 const Project = ({images, title, description}) => {
     
@@ -39,17 +43,21 @@ const Project = ({images, title, description}) => {
 }
 
 const Projects = () => {
-    const project1Images = [
+    const spotifyProjectImgs = [
         spotAuthView,
         spotTopTracksView,
         spotTopArtistsView,
         spotMobilView
     ]
-    const project3Images = [
+    const sysdesImgs = [
         floorPlan,
         profileWindow,
         ganttChart,
         classDiagram
+    ]
+    const tumblrProjectImgs = [
+        tumblrFull,
+        tumblrMobile
     ]
 
     return (
@@ -58,17 +66,17 @@ const Projects = () => {
             <Project 
                 title = 'Spotify Statisic Tracker'
                 description = " Spotify Statistics Tracker created using React, TypeScript, and Sass with the Spotify API developer tools"
-                images = {project1Images}
+                images = {spotifyProjectImgs}
             />
             <Project 
                 title = 'Project 1'
-                description = " This is a project created by react, js, html, css, and depsloutsf using sedjfklsjfs nootsfsdf sql dtabase"
-                images = {project1Images}
+                description = "Indie-web inspired personal website. Acts as a personal alternative to social media and online identity."
+                images = {tumblrProjectImgs}
             />
             <Project 
-                title = 'Project 1'
-                description = " This is a project created by react, js, html, css, and depsloutsf using sedjfklsjfs nootsfsdf sql dtabase"
-                images = {project3Images}
+                title = 'System Design Course Project'
+                description = "System design for a restaurant application to make tasks easier and efficient."
+                images = {sysdesImgs}
             />
         </div>
         
