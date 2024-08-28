@@ -7,4 +7,6 @@ Website build to showcase projects and technical skills !
 - [React](https://react.dev//) - The web framework used
 - [Sass](https://sass-lang.com/) - Styling
 
-# Visuals
+# Live Site
+
+https://jonathanpatino.netlify.app/
