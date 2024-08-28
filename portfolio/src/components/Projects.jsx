@@ -69,8 +69,8 @@ const Projects = () => {
                 images = {spotifyProjectImgs}
             />
             <Project 
-                title = 'Project 1'
-                description = "Indie-web inspired personal website. Acts as a personal alternative to social media and online identity."
+                title = 'My Personal Web'
+                description = "Indie-web inspired personal website. Acts as a personal alternative to social media and online identity. Built with React and Flask using Tumblr API tools."
                 images = {tumblrProjectImgs}
             />
             <Project 

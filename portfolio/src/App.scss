@@ -149,12 +149,14 @@
     min-width: 250px;
   }
   .project {
+    margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
 
     .project-title {
-      font-size: 20px;
+      font-size: 25px;
       margin-bottom: 15px;
+      color: var(--teal)
       
     }
 
@@ -192,9 +194,12 @@
 /* ---------------- Contact Me ----------------------*/
 
 .contactMe {
+  background-color: var(--gray);
+  padding-top: 40px;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  padding-bottom: 200px;
   
   
   h1 {

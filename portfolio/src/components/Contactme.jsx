@@ -1,12 +1,38 @@
-
+import Swal from 'sweetalert2'
 
 
 const ContactMe = () => {
-    const formSubmit = (e) => {
-        e.preventDefault()
-        console.log('submit');
-        
-    }
+    const access_key = "8034dfa5-68f3-4d48-b713-4f4d523ffa90"
+    const formSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", access_key);
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+            Swal.fire({
+                title: "Success!",
+                text: "Message has been sent!",
+                icon: "success",
+                background: "#76ABAE",
+                color: "#EEEEEE"
+              });
+          console.log("Success", res);
+        }
+      };
+
     return (
         <div className="contactMe">
             <h1>Send me a message!</h1>
