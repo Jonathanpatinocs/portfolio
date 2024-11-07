@@ -196,7 +196,7 @@
 .contactMe {
   background-color: var(--gray);
   padding-top: 40px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   padding-bottom: 200px;
@@ -252,7 +252,7 @@
 
   .navbar {
     flex-direction: column;
-    width: 100%;
+    width: auto;
     align-items: center;
     text-align: center;
     font-size: 0.8em;
@@ -312,7 +312,11 @@
         margin-right: 10%;
       }
     }
-  }
+    .contactMe {
+      width: 100%;
+    }
+}
+
 
   
 
